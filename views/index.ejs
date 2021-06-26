@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .form-section {
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid #f2f2f2;
+      height: 400px;
+      width: 300px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1 class="header">OCR UPLOAD</h1>
+  <section class="form-section">
+    <form action="/uploadfile" method="post" enctype="multipart/form-data">
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile">
+
+      <!-- <label for="myfile">Select a file:</label>
+      <input type="file" id="myfiles" name="myfiles">  -->
+      <input class="btn btn-primary" type="submit" style="border-radius: 4px;" name="cashbackfiles" value="Upload">
+    </form>
+  </section>
+  
+</body>
+</html>
