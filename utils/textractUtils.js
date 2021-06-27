@@ -99,6 +99,7 @@ module.exports = async buffer => {
 
   const request = textract.analyzeDocument(params);
   const data = await request.promise();
+  console.log(data, 'here......');
 
   if (data && data.Blocks) {
     const { keyMap, valueMap, blockMap } = getKeyValueMap(data.Blocks);
